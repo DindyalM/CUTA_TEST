@@ -2,18 +2,6 @@
 <html>
   <head>
     <title>Bar Chart Example</title>
-    <style>
-      .chart {
-        width: 300px;
-        height: 200px;
-        border: 1px solid #ccc;
-        margin: 20px;
-        padding: 10px;
-      }
-      .bar {
-        fill: steelblue;
-      }
-    </style>
     <script src="https://d3js.org/d3.v6.min.js"></script>
   </head>
   <body>
@@ -26,38 +14,75 @@
           {
             name: 'analytics',
             children: [
-              { name: 'cluster', value: 3 },
-              { name: 'graph', value: 2 },
-              { name: 'optimization', value: 4 },
+              {
+                name: 'cluster',
+                children: [
+                  {
+                    name: 'AgglomerativeCluster',
+                    children: [
+                      { name: 'Node1', value: 10 },
+                      { name: 'Node2', value: 8 },
+                      { name: 'Node3', value: 6 },
+                      { name: 'Node4', value: 4 },
+                    ],
+                  },
+                  {
+                    name: 'HierarchicalCluster',
+                    children: [
+                      { name: 'Node5', value: 7 },
+                      { name: 'Node6', value: 5 },
+                      { name: 'Node7', value: 3 },
+                      { name: 'Node8', value: 2 },
+                    ],
+                  },
+                ],
+              },
+              {
+                name: 'graph',
+                children: [
+                  {
+                    name: 'BetweennessCentrality',
+                    children: [
+                      { name: 'Node9', value: 20 },
+                      { name: 'Node10', value: 18 },
+                      { name: 'Node11', value: 16 },
+                      { name: 'Node12', value: 14 },
+                    ],
+                  },
+                  {
+                    name: 'LinkDistance',
+                    children: [
+                      { name: 'Node13', value: 9 },
+                      { name: 'Node14', value: 7 },
+                      { name: 'Node15', value: 5 },
+                      { name: 'Node16', value: 3 },
+                    ],
+                  },
+                ],
+              },
             ],
           },
           {
             name: 'animate',
             children: [
-              { name: 'Easing', value: 2 },
-              { name: 'FunctionSequence', value: 2 },
-              { name: 'interpolate', value: 6 },
-              { name: 'ISchedulable', value: 4 },
-              { name: 'Parallel', value: 2 },
-              { name: 'Pause', value: 2 },
-              { name: 'Scheduler', value: 2 },
-              { name: 'Sequence', value: 3 },
-              { name: 'Transition', value: 1 },
-              { name: 'Transitioner', value: 1 },
-              { name: 'TransitionEvent', value: 1 },
-              { name: 'Tween', value: 5 },
-            ],
-          },
-          {
-            name: 'data',
-            children: [
-              { name: 'converters', value: 4 },
-              { name: 'DataField', value: 3 },
-              { name: 'DataSchema', value: 2 },
-              { name: 'DataSet', value: 2 },
-              { name: 'DataSource', value: 2 },
-              { name: 'DataTable', value: 3 },
-              { name: 'DataUtil', value: 2 },
+              {
+                name: 'Easing',
+                children: [
+                  { name: 'Node17', value: 5 },
+                  { name: 'Node18', value: 3 },
+                  { name: 'Node19', value: 2 },
+                  { name: 'Node20', value: 1 },
+                ],
+              },
+              {
+                name: 'FunctionSequence',
+                children: [
+                  { name: 'Node21', value: 8 },
+                  { name: 'Node22', value: 6 },
+                  { name: 'Node23', value: 4 },
+                  { name: 'Node24', value: 2 },
+                ],
+              },
             ],
           },
         ],

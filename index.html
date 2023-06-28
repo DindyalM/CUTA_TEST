@@ -12,50 +12,54 @@
         name: 'flare',
         children: [
           {
-            name: 'analytics',
+            name: 'Data Discovery',
             children: [
               {
-                name: 'cluster',
+                name: 'Membership Cleaning',
                 children: [
                   {
-                    name: 'AgglomerativeCluster',
+                    name: 'CRM Cleaning',
                     children: [
-                      { name: 'Node1', value: 10 },
-                      { name: 'Node2', value: 8 },
-                      { name: 'Node3', value: 6 },
-                      { name: 'Node4', value: 4 },
-                    ],
-                  },
-                  {
-                    name: 'HierarchicalCluster',
-                    children: [
-                      { name: 'Node5', value: 7 },
-                      { name: 'Node6', value: 5 },
-                      { name: 'Node7', value: 3 },
-                      { name: 'Node8', value: 2 },
+                      { name: 'Gather Info', value: 10 },
+                      { name: 'Identify Fields', value: 8 },
+                      { name: 'Company Cleaning', value: 6 },
+                      { name: 'Remove Contacts', value: 4 },
+                      { name: 'Obtain Members', value: 2 },
                     ],
                   },
                 ],
               },
               {
-                name: 'graph',
+                name: 'Survey Process',
+                children: [
+                  { name: 'Survey', value: 9 },
+                  { name: 'Approval Meetings', value: 7 },
+                  { name: 'Email Creation', value: 5 },
+                  { name: 'E-blast Communications', value: 3 },
+                  { name: 'E-blast Response', value: 1 },
+                ],
+              },
+              {
+                name: 'Important Meetings',
+                children: [
+                  { name: 'Fields/Data Clean', value: 8 },
+                  { name: 'Directory Existence', value: 6 },
+                  { name: 'Emails/Blanks/Help', value: 4 },
+                ],
+              },
+              {
+                name: 'Code Process',
                 children: [
                   {
-                    name: 'BetweennessCentrality',
-                    children: [
-                      { name: 'Node9', value: 20 },
-                      { name: 'Node10', value: 18 },
-                      { name: 'Node11', value: 16 },
-                      { name: 'Node12', value: 14 },
-                    ],
+                    name: 'Complex Queries',
+                    value: 7,
                   },
                   {
-                    name: 'LinkDistance',
+                    name: 'Membership Directory',
                     children: [
-                      { name: 'Node13', value: 9 },
-                      { name: 'Node14', value: 7 },
-                      { name: 'Node15', value: 5 },
-                      { name: 'Node16', value: 3 },
+                      { name: 'PDF Copies', value: 6 },
+                      { name: 'Convert to Excel', value: 5 },
+                      { name: 'Compare Matches', value: 4 },
                     ],
                   },
                 ],
@@ -63,24 +67,54 @@
             ],
           },
           {
-            name: 'animate',
+            name: 'Survey vs IMIS',
             children: [
+              { name: 'IMIS Members', value: 10 },
+              { name: 'Survey Response', value: 9 },
+              { name: 'Match Entries', value: 8 },
+              { name: 'Record Observations', value: 7 },
+              { name: 'Handle Duplicates', value: 6 },
+              { name: 'Extract Data', value: 5 },
               {
-                name: 'Easing',
+                name: 'Data Verification',
                 children: [
-                  { name: 'Node17', value: 5 },
-                  { name: 'Node18', value: 3 },
-                  { name: 'Node19', value: 2 },
-                  { name: 'Node20', value: 1 },
+                  { name: 'Send Template', value: 4 },
+                  { name: 'Draft Email', value: 3 },
+                  { name: 'Increase Communication', value: 2 },
+                  { name: 'Follow-up Emails', value: 1 },
+                  {
+                    name: 'Data Organization',
+                    children: [{ name: 'Create Sheets', value: 3 }],
+                  },
                 ],
               },
               {
-                name: 'FunctionSequence',
+                name: 'Discovery 2',
                 children: [
-                  { name: 'Node21', value: 8 },
-                  { name: 'Node22', value: 6 },
-                  { name: 'Node23', value: 4 },
-                  { name: 'Node24', value: 2 },
+                  { name: 'DIRECTORY_2', value: 10 },
+                  {
+                    name: 'Remaining Contact',
+                    children: [
+                      { name: 'Analyze Responses', value: 9 },
+                      { name: 'Utilize Departments', value: 8 },
+                      {
+                        name: 'Redetermine Structure',
+                        children: [
+                          { name: 'Determine Reason', value: 7 },
+                          { name: 'Investigate', value: 6 },
+                          { name: 'Group/Accommodate', value: 5 },
+                          { name: 'Determine Fields', value: 4 },
+                        ],
+                      },
+                      {
+                        name: 'Create Outreach',
+                        children: [
+                          { name: 'Research Contact', value: 3 },
+                          { name: 'Gather Data', value: 2 },
+                        ],
+                      },
+                    ],
+                  },
                 ],
               },
             ],
